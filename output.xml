@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.5 on win32)" generated="20210927 17:40:46.537" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\navya\Documents\Mobile_Api\Tests">
+<suite id="s1-s1" name="Test Case" source="C:\Users\navya\Documents\Mobile_Api\Tests\test_case.robot">
+<test id="s1-s1-t1" name="Observer user able to search in mirror application">
+<kw name="Launch the mirron application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${mir_server}</arg>
+<arg>platformName=${pf_name}</arg>
+<arg>platformVersion=${version_device}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>app=${app_loc}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20210927 17:40:46.915" endtime="20210927 17:41:16.914"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>English</arg>
+<arg>timeout=180s</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:41:16.915" endtime="20210927 17:41:21.933"/>
+</kw>
+<status status="PASS" starttime="20210927 17:40:46.914" endtime="20210927 17:41:21.933"/>
+</kw>
+<kw name="Select lang">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//*[@text='English' and @index=0]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210927 17:41:21.941" level="INFO">Clicking element 'xpath=//*[@text='English' and @index=0]'.</msg>
+<status status="PASS" starttime="20210927 17:41:21.935" endtime="20210927 17:41:23.607"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>CONTINUE</arg>
+<arg>timeout=90s</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:41:23.607" endtime="20210927 17:41:25.312"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.flipkart.android:id/select_btn</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210927 17:41:25.316" level="INFO">Clicking element 'id=com.flipkart.android:id/select_btn'.</msg>
+<status status="PASS" starttime="20210927 17:41:25.312" endtime="20210927 17:41:25.503"/>
+</kw>
+<status status="PASS" starttime="20210927 17:41:21.934" endtime="20210927 17:41:25.504"/>
+</kw>
+<kw name="Click on none of the above">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Phone Number</arg>
+<arg>timeout=280s</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:41:25.507" endtime="20210927 17:41:36.094"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.flipkart.android:id/custom_back_icon</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210927 17:41:36.101" level="INFO">Clicking element 'id=com.flipkart.android:id/custom_back_icon'.</msg>
+<status status="PASS" starttime="20210927 17:41:36.095" endtime="20210927 17:41:39.887"/>
+</kw>
+<status status="PASS" starttime="20210927 17:41:25.507" endtime="20210927 17:41:39.887"/>
+</kw>
+<kw name="Click on Electronics">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.ImageView[@bounds='[792,479][973,650]']</arg>
+<arg>timeout=190s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:41:39.888" endtime="20210927 17:41:52.025"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.ImageView[@bounds='[792,479][973,650]']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210927 17:41:52.032" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@bounds='[792,479][973,650]']'.</msg>
+<status status="PASS" starttime="20210927 17:41:52.025" endtime="20210927 17:41:53.589"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.ImageView[@bounds='[0,1039][1080,1255]']</arg>
+<arg>timeout=80s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:41:53.590" endtime="20210927 17:41:57.743"/>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<arg>50</arg>
+<arg>90</arg>
+<arg>50</arg>
+<arg>20</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="PASS" starttime="20210927 17:41:57.743" endtime="20210927 17:42:00.275"/>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<arg>50</arg>
+<arg>90</arg>
+<arg>50</arg>
+<arg>20</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="PASS" starttime="20210927 17:42:00.275" endtime="20210927 17:42:02.665"/>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<arg>50</arg>
+<arg>80</arg>
+<arg>50</arg>
+<arg>10</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="PASS" starttime="20210927 17:42:02.666" endtime="20210927 17:42:05.213"/>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<arg>50</arg>
+<arg>80</arg>
+<arg>50</arg>
+<arg>10</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="PASS" starttime="20210927 17:42:05.213" endtime="20210927 17:42:07.763"/>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<arg>50</arg>
+<arg>80</arg>
+<arg>50</arg>
+<arg>10</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="PASS" starttime="20210927 17:42:07.763" endtime="20210927 17:42:10.611"/>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>100</arg>
+<arg>700</arg>
+<arg>100</arg>
+<arg>1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20210927 17:42:10.611" endtime="20210927 17:42:13.105"/>
+</kw>
+<status status="PASS" starttime="20210927 17:41:39.887" endtime="20210927 17:42:13.106"/>
+</kw>
+<kw name="Search phone">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.flipkart.android:id/search_icon</arg>
+<arg>timeout=130s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:42:13.108" endtime="20210927 17:42:13.613"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.flipkart.android:id/search_icon</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210927 17:42:13.617" level="INFO">Clicking element 'id=com.flipkart.android:id/search_icon'.</msg>
+<status status="PASS" starttime="20210927 17:42:13.613" endtime="20210927 17:42:13.797"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.flipkart.android:id/search_autoCompleteTextView</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:42:13.797" endtime="20210927 17:42:14.396"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=com.flipkart.android:id/search_autoCompleteTextView</arg>
+<arg>iphone11</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20210927 17:42:14.400" level="INFO">Typing text 'iphone11' into text field 'id=com.flipkart.android:id/search_autoCompleteTextView'</msg>
+<status status="PASS" starttime="20210927 17:42:14.396" endtime="20210927 17:42:17.495"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.RelativeLayout[@bounds='[0,311][1080,499]']</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:42:17.496" endtime="20210927 17:42:19.227"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.RelativeLayout[@bounds='[0,311][1080,499]']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210927 17:42:19.231" level="INFO">Clicking element 'xpath=//android.widget.RelativeLayout[@bounds='[0,311][1080,499]']'.</msg>
+<status status="PASS" starttime="20210927 17:42:19.227" endtime="20210927 17:42:19.640"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.flipkart.android:id/not_now_button</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:42:19.641" endtime="20210927 17:42:23.142"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.flipkart.android:id/not_now_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210927 17:42:23.147" level="INFO">Clicking element 'id=com.flipkart.android:id/not_now_button'.</msg>
+<status status="PASS" starttime="20210927 17:42:23.142" endtime="20210927 17:42:23.376"/>
+</kw>
+<status status="PASS" starttime="20210927 17:42:13.106" endtime="20210927 17:42:23.377"/>
+</kw>
+<kw name="Scroll to select phone">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//*[@text='APPLE iPhone 11 (Red, 128 GB)']</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:42:23.379" endtime="20210927 17:42:28.524"/>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<arg>50</arg>
+<arg>80</arg>
+<arg>50</arg>
+<arg>10</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="PASS" starttime="20210927 17:42:28.524" endtime="20210927 17:42:31.005"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//*[@text='APPLE iPhone 11 (Red, 128 GB)']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210927 17:42:31.009" level="INFO">Clicking element 'xpath=//*[@text='APPLE iPhone 11 (Red, 128 GB)']'.</msg>
+<status status="PASS" starttime="20210927 17:42:31.005" endtime="20210927 17:42:31.598"/>
+</kw>
+<status status="PASS" starttime="20210927 17:42:23.378" endtime="20210927 17:42:31.598"/>
+</kw>
+<kw name="Add to cart">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//*[@text='ADD TO CART']</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:42:31.600" endtime="20210927 17:42:38.194"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//*[@text='ADD TO CART']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210927 17:42:38.200" level="INFO">Clicking element 'xpath=//*[@text='ADD TO CART']'.</msg>
+<status status="PASS" starttime="20210927 17:42:38.194" endtime="20210927 17:42:44.361"/>
+</kw>
+<status status="PASS" starttime="20210927 17:42:31.599" endtime="20210927 17:42:44.361"/>
+</kw>
+<kw name="Quit">
+<kw name="Quit Application" library="AppiumLibrary">
+<doc>Quit application. Application can be quit while Appium session is kept alive.
+This keyword can be used to close application during test case or between test cases.</doc>
+<status status="PASS" starttime="20210927 17:42:44.364" endtime="20210927 17:42:45.427"/>
+</kw>
+<status status="PASS" starttime="20210927 17:42:44.363" endtime="20210927 17:42:45.428"/>
+</kw>
+<kw name="Launch Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${mir_server}</arg>
+<arg>platformName=${pf_name}</arg>
+<arg>platformVersion=${version_device}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>app=${app_loc}</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20210927 17:42:45.431" endtime="20210927 17:43:20.796"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.RelativeLayout[@content-desc="Shopping Cart"]/android.widget.LinearLayout</arg>
+<arg>timeout=40s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20210927 17:43:20.797" endtime="20210927 17:43:28.500"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.RelativeLayout[@content-desc="Shopping Cart"]/android.widget.LinearLayout</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210927 17:43:28.504" level="INFO">Clicking element 'xpath=//android.widget.RelativeLayout[@content-desc="Shopping Cart"]/android.widget.LinearLayout'.</msg>
+<status status="PASS" starttime="20210927 17:43:28.500" endtime="20210927 17:43:36.672"/>
+</kw>
+<status status="PASS" starttime="20210927 17:42:45.430" endtime="20210927 17:43:36.672"/>
+</kw>
+<status status="PASS" starttime="20210927 17:40:46.913" endtime="20210927 17:43:36.674"/>
+</test>
+<status status="PASS" starttime="20210927 17:40:46.591" endtime="20210927 17:43:36.678"/>
+</suite>
+<status status="PASS" starttime="20210927 17:40:46.540" endtime="20210927 17:43:36.682"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Case">Tests.Test Case</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
